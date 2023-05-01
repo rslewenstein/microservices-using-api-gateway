@@ -1,0 +1,9 @@
+[submodule "server-brazilian-first-division"]
+	path = server-brazilian-first-division
+	url = git@github.com:rslewenstein/server-brazilian-first-division.git
+[submodule "server-brazilian-second-division"]
+	path = server-brazilian-second-division
+	url = git@github.com:rslewenstein/server-brazilian-second-division.git
+[submodule "api-gateway-ocelot"]
+	path = api-gateway-ocelot
+	url = git@github.com:rslewenstein/api-gateway-ocelot.git
