@@ -13,7 +13,7 @@ namespace api_client.Repository
             else if(division == 2)
                result = GetSecondDivision();
             else
-               result.Add("Teams not founds");    
+               result.Add("Not found!");    
 
             return result;   
         }
@@ -21,8 +21,7 @@ namespace api_client.Repository
         private List<String> GetFirstDivision()
         {
             HttpClient client = new HttpClient();
-            //var teamList = client.GetStringAsync("http://localhost:5142/FirstDivisionTeams").Result;
-            var teamList = client.GetStringAsync("http://localhost:5194/firstDivision").Result;
+            var teamList = client.GetStringAsync("http://localhost:5146/firstDivision").Result;
             var result = JsonSerializer.Deserialize<List<string>>(teamList.ToString())!;
             return result;
         }
@@ -30,8 +29,7 @@ namespace api_client.Repository
         private List<String> GetSecondDivision()
         {
             HttpClient client = new HttpClient();
-            // var teamList = client.GetStringAsync("http://localhost:5021/SecondDivisionTeams").Result;
-            var teamList = client.GetStringAsync("http://localhost:5194/secondDivision").Result;
+            var teamList = client.GetStringAsync("http://localhost:5146/secondDivision").Result;
             var result = JsonSerializer.Deserialize<List<string>>(teamList.ToString())!;
             return result;
         }
