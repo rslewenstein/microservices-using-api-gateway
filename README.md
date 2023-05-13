@@ -1,5 +1,8 @@
 # Microservices using API Gateway
-A simple example of the microservices using Api Gateway.
+I created these repositories to study about:
+- microservices
+- Gateway
+- git submodules
 
 ## Technologies used:
 - .Net 7
