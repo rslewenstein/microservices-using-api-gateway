@@ -25,7 +25,7 @@ To create submodules:
 
 To Clone a project with submodules:
 - git clone <URL_MAIN_PROJECT>
-- git submodule init
+- git submodule update --init --recursive
 
 You can see more about Git Submodules here:
 - https://git-scm.com/book/en/v2/Git-Tools-Submodules
